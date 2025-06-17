@@ -1,0 +1,66 @@
+model_list:
+  - model_name: PREVIEW-llama4-scout-temp-02
+    litellm_params:
+      model: groq/meta-llama/llama-4-scout-17b-16e-instruct
+      api_key: "os.environ/GROQ_API_KEY"
+      temperature: 0.2
+
+  - model_name: PREVIEW-llama4-scout-temp-08
+    litellm_params:
+      model: groq/meta-llama/llama-4-scout-17b-16e-instruct
+      api_key: "os.environ/GROQ_API_KEY"
+      temperature: 0.8
+
+  - model_name: claude-opus-4-EXPENSIVE
+    litellm_params:
+      model: claude-opus-4-20250514
+      api_key: "os.environ/ANTHROPIC_API_KEY"
+
+  - model_name: claude-sonnet-4
+    litellm_params:
+      model: claude-sonnet-4-20250514
+      api_key: "os.environ/ANTHROPIC_API_KEY"
+      temperature: 0.5
+
+  - model_name: claude-3-7-sonnet
+    litellm_params:
+      model: claude-3-7-sonnet-20250219
+      api_key: "os.environ/ANTHROPIC_API_KEY"
+
+  # Llama 4 Maverick - Sharper reasoning, 1M context
+  - model_name: PREVIEW-llama4-maverick
+    litellm_params:
+      model: groq/meta-llama/llama-4-maverick-17b-128e-instruct
+      api_key: "os.environ/GROQ_API_KEY"
+
+  - model_name: google-gemma2-9b-temp-02
+    litellm_params:
+      model: groq/gemma2-9b-it
+      api_key: "os.environ/GROQ_API_KEY"
+      temperature: 0.2
+
+  - model_name: google-gemma2-9b-temp-08
+    litellm_params:
+      model: groq/gemma2-9b-it
+      api_key: "os.environ/GROQ_API_KEY"
+      temperature: 0.8
+
+  - model_name: llama3-70b-versatile
+    litellm_params:
+      model: groq/llama-3.3-70b-versatile
+      api_key: "os.environ/GROQ_API_KEY"
+
+  - model_name: PREVIEW-llama3.1-405b
+    litellm_params:
+      model: groq/llama-3.1-405b-reasoning
+      api_key: "os.environ/GROQ_API_KEY"
+
+  - model_name: PREVIEW-deepseek-r1
+    litellm_params:
+      model: groq/deepseek-r1-distill-llama-70b
+      api_key: "os.environ/GROQ_API_KEY"
+
+# LiteLLM Proxy Settings
+litellm_settings:
+  port: 8000
+  # debug: true
