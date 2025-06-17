@@ -3,7 +3,7 @@ Implementation of an incomplete lm-studio API which proxies requests to other AI
 
 This allows using remote LLM inference with tooling that has LM Studio integration. Integration with
 upstream models is through the excellent [LiteLLM proxy](https://docs.litellm.ai/docs/simple_proxy) providing
-access to a [wide array](https://docs.litellm.ai/docs/completion) of providers and models.
+access to a [wide array](https://docs.litellm.ai/docs/providers) of providers and models.
 
 E.g. JetBrains AI-Assistant (used in PyCharm / Intellij etc.) supports remote models using the 
 JetBrains AI service, or local models via LM-Studio or Ollama.
